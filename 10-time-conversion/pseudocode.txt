@@ -1,0 +1,12 @@
+CASE meridiem
+    CASE AM
+        IF standardHour == 12
+            return "00" + standardTime[1] + standardTime[2]
+        ELSE
+            return standardTime
+    CASE PM
+        IF standardHour == 12
+            return standardTime
+        ELSE
+            return (standardTime+12) + standardTime[1] + standardTime[2]
+ENDCASE
