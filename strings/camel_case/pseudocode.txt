@@ -1,0 +1,8 @@
+SET Count
+FOR X=0 TO X=len(array)-1
+    IF unicode.IsUpper(array[X])
+        Count++
+    END IF
+END FOR
+
+RETURNING Count + 1
