@@ -1,0 +1,21 @@
+FUNCTION IsPangram (Input) bool
+    SET MAP := make(map[string]int)
+
+    FOR each Data in Input
+        Char := unicode.ToLower(Data)
+        IF string(Char) == " " 
+
+        ENDIF
+
+        ELSE IF _, OK := MAP[string(Char)]; !OK 
+            MAP[string(Char)] = 1
+        END ELSE IF
+    }
+
+    SET RESULT = FALSE
+    IF len(MAP) == 26 
+        RESULT = TRUE
+    END IF
+
+    RETURNING RESULT
+END FUCTION
