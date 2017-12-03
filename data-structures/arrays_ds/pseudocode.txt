@@ -1,0 +1,6 @@
+SET ReversedData
+FOR X=len(array)-1 TO 0
+    ReversedData = ReversedData + array[i]
+END LOOP
+
+RETURNING strings.TrimSpace(ReversedData)
