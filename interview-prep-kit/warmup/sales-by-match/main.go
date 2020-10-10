@@ -20,6 +20,9 @@ func main() {
 }
 
 func sockMerchant(n int32, ar []int32) int32 {
+
+	// Add socks to loop as map
+	// Ex. [1,1,1] => [1: 3]
 	matchedSocks := map[int32]int32{}
 	for i := 0; i < len(ar); i++ {
 		if _, ok := matchedSocks[ar[i]]; !ok {
